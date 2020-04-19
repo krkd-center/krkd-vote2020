@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+KR:400,700" rel="stylesheet">
+    <title>크리킨디센터 개관기념 공모전 온라인 투표</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1 class="center">크리킨디센터 개관 기념 공모전 온라인 투표</h1>
+    <h2 class="center">크리킨디센터의 두 번째 생일을 축하해주세요~</h2>
+    <!--image vote-->
+    <h2 class="left">캐릭터 공모전</h2>
+    <div class="image-container">
+        <div class="image-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="wonhy">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="wonhy-result"></p>
+            </div>
+
+            <img src="image/01.jpg" />
+            <strong>원혜연 16세</strong><br> 나는 물 한 방울을 물고가는 크리킨디를 캐릭터로 표현했다. 내가 크리킨디를 초록색과 파랑색으로 칠한 이유는 예로부터 초록색은 생명력을 표현하고 파랑색은 행복을 나타내는 색이기 때문에 크리킨디가 만들어내는 숲의 생명력과 동물들의 행복을 나타내고 싶었기 때문이다. 그리고 크리킨디가 물고있는 물 한 방울에 담긴 별은 크리킨디의 높은 긍지와 꿈을 상징한다.
+        </div>
+        <div class="image-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="joes">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="joes-result"></p>
+            </div>
+            <img src="image/02.jpg" />
+            <strong>조은수 14세</strong><br> 초록색을 사용함으로써 자연을 아끼는 마음과 몸의 물방울 표시로 크리킨디 일화를 살린 새입니다!
+        </div>
+        <div class="image-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="leeh">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="leeh-result"></p>
+            </div>
+            <img src="image/03.jpg" />
+            <strong>이해 10세</strong><br> 파워포인트로 그린 크리킨디입니다.
+        </div>
+        <div class="image-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="sonjh">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="sonjh-result"></p>
+                <img src="image/04.jpg" />
+                <strong>손재희 9세</strong><br> 지구와 목에는 카메라를 달고있어요. 지구를 지키는 환경지킴이 그리킨디예요 .목에는 카메라를 달고있는데, 전세계를 돌아다니며 환경을 전세계 사람들에게 실시간으로 보여주는 거예요.
+            </div>
+        </div>
+        <div class="image-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="ahns">
+                    <span class="unliked">
+                            <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                        </span>
+                </a>
+                <p id="ahns-result"></p>
+                <img src="image/05.jpg" />
+                <strong>안솔 18세</strong><br> 숲을 지키는 숲 지킴이 크리킨디는 숲을 품고 있어요.
+            </div>
+        </div>
+    </div>
+    <!--text vote-->
+    <h2 class="left">글 공모전</h2>
+    <h2 class="left">주제: 크리킨디 우화는 어떻게 끝맺었을까?</h2>
+    <div class="text-container">
+        <div class="text-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="text1">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="text1-result"></p>
+            </div>
+            <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, fugit in. Maxime perferendis natus vero nemo doloribus cupiditate nesciunt vitae voluptas ad odio facere incidunt magnam, repudiandae excepturi sapiente totam.</p>
+        </div>
+        <div class="text-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="text2">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="text2-result"></p>
+            </div>
+            <p>2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem eius esse ullam, ea minima quasi voluptatibus laudantium repellendus tenetur quas, doloribus quisquam! Cumque optio reiciendis iste dolore non porro fugiat.</p>
+        </div>
+        <div class="text-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="text3">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="text3-result"></p>
+            </div>
+            <p>3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro veniam laborum sapiente ipsa nobis. Facilis error exercitationem, sed officia hic, harum alias commodi rerum praesentium in libero dicta odio quisquam.</p>
+        </div>
+        <div class="text-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="text4">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="text4-result"></p>
+            </div>
+            <p>4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eius ullam cum explicabo ducimus voluptate consectetur, incidunt asperiores et autem? Voluptatum quam dolorum dolorem unde sint exercitationem suscipit, reiciendis tempora.</p>
+        </div>
+        <div class="text-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="text5">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="text5-result"></p>
+            </div>
+            <p>5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel omnis, voluptatum quis qui necessitatibus repellat porro suscipit doloremque, ab, facere pariatur velit officia unde officiis voluptates similique hic libero error.</p>
+        </div>
+        <div class="text-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="text6">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="text6-result"></p>
+            </div>
+            <p>6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa rerum dolorem alias magnam soluta quaerat, ipsum assumenda tenetur doloribus quidem magni recusandae. Perferendis, sed. Mollitia totam asperiores corporis pariatur dignissimos!</p>
+        </div>
+        <div class="text-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="text7">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="text7-result"></p>
+            </div>
+            <p>7 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis minus, dolorem odio quidem harum ea maiores deserunt cumque consequatur ipsum id, ratione rerum ut laudantium quam repellendus amet, quaerat illo.</p>
+        </div>
+        <div class="text-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="text8">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="text8-result"></p>
+            </div>
+            <p>8 Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo adipisci, asperiores laborum provident dicta repellendus eos facilis impedit quod illum! Earum necessitatibus aperiam fuga praesentium odio minus perferendis, dicta quaerat.</p>
+        </div>
+        <div class="text-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="text9">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="text9-result"></p>
+            </div>
+            <p>9 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit veniam reprehenderit deserunt neque dicta impedit ipsa, delectus, quidem consequuntur, incidunt autem quis quae quod exercitationem. Totam error quis accusantium voluptatum?</p>
+        </div>
+        <div class="text-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="text10">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="text10-result"></p>
+            </div>
+            <p>10 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti maxime, nemo eos ullam in ipsum officia. Iure, qui, laborum eveniet omnis nisi sequi assumenda nulla, veritatis possimus obcaecati quas voluptatem?</p>
+        </div>
+        <div class="text-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="text11">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="text11-result"></p>
+            </div>
+            <p>11 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora optio tempore nihil inventore labore quasi, repellendus fuga maxime. Impedit, obcaecati sint. Nam at quaerat exercitationem quod pariatur. Doloribus, reprehenderit beatae?</p>
+        </div>
+        <div class="text-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="text12">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="text12-result"></p>
+            </div>
+            <p>12 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dignissimos reprehenderit excepturi at rerum aut quo tenetur! Perspiciatis corporis modi dolorem, earum saepe nemo exercitationem facere, aut ut aspernatur doloremque.</p>
+        </div>
+        <div class="text-box">
+            <div class="vote">
+                <a href="#" class="like-counter" id="text13">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="text13-result"></p>
+            </div>
+            <p>13 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis fugit nobis aut molestias quae cumque accusamus quia! Laborum architecto quasi ipsam eum, odio nemo dolorem? Iste asperiores quasi omnis. Blanditiis!</p>
+        </div>
+    </div>
+    <h2 class="left">주제: 크리킨디 우화는 어떻게 끝맺었을까?</h2>
+    <div class="text-container">
+
+        <div class="text-box2">
+            <div class="vote">
+                <a href="#" class="like-counter" id="text14">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="text14-result"></p>
+            </div>
+            <p>14 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum pariatur assumenda et error provident cumque perspiciatis minima quo. Voluptatibus maxime fuga, doloribus esse perferendis magnam possimus! At quaerat voluptatem tempora.</p>
+        </div>
+        <div class="text-box2">
+            <div class="vote">
+                <a href="#" class="like-counter" id="text15">
+                    <span class="unliked">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <p id="text15-result"></p>
+            </div>
+            <p>15 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat facilis, cumque, modi provident non fuga accusantium exercitationem quaerat autem totam deleniti rerum, reiciendis odit minima? Blanditiis, placeat fugiat? Ex, quisquam.</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+<footer>
+    <img src="image/kor_logo_svg.svg" width="200px" />
+
+
+</footer>
+
+
+
+</html>
