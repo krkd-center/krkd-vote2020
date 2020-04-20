@@ -21,6 +21,13 @@ body {
     background: linear-gradient(0deg, rgba(255, 178, 178, 1) 0%, rgba(0, 20, 160, 1) 100%);
 }
 
+p {
+    font-family: sans-serif;
+    color: magenta;
+    font-weight: bold;
+    padding: 2px 0 5px 7px;
+}
+
 .like-counter {
     color: black;
     text-decoration: none;
@@ -127,6 +134,14 @@ h2 {
 
 .text-box:hover {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.story {
+    font-family: Light;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: black;
+    font-weight: normal;
 }
 
 footer {
