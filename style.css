@@ -37,6 +37,26 @@ p {
     margin: 10px 0;
 }
 
+.story {
+    font-family: Light;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: black;
+    font-weight: normal;
+    padding-top: 6px;
+    padding-bottom: 20px;
+}
+
+.age {
+    font-family: Light;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: black;
+    font-weight: normal;
+    padding-top: 15px;
+    text-align: right;
+}
+
 .like-counter {
     color: black;
     text-decoration: none;
@@ -143,14 +163,6 @@ h2 {
 
 .text-box:hover {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-.story {
-    font-family: Light;
-    font-size: 1rem;
-    line-height: 1.4rem;
-    color: black;
-    font-weight: normal;
 }
 
 footer {
