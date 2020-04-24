@@ -60,6 +60,68 @@ let text14Result = document.getElementById("text14-result");
 const text15 = document.getElementById("text15");
 let text15Result = document.getElementById("text15-result");
 
+//hide hearts
+function hidewonhy(wonhy) {
+  wonhy.style.display = 'none';
+}
+function hidejoes(joes) {
+  joes.style.display = 'none';
+}
+function hideleeh(leeh) {
+  leeh.style.display = 'none';
+}
+function hidesonjh(sonjh) {
+  sonjh.style.display = 'none';
+}
+function hideahns(ahns) {
+  ahns.style.display = 'none';
+}
+function hide1(text1) {
+  text1.style.display = 'none';
+}
+function hide2(text2) {
+  text2.style.display = 'none';
+}
+function hide3(text3) {
+  text3.style.display = 'none';
+}
+function hide4(text4) {
+  text4.style.display = 'none';
+}
+function hide5(text5) {
+  text5.style.display = 'none';
+}
+function hide6(text6) {
+  text6.style.display = 'none';
+}
+function hide7(text7) {
+  text7.style.display = 'none';
+}
+function hide8(text8) {
+  text8.style.display = 'none';
+}
+function hide9(text9) {
+  text9.style.display = 'none';
+}
+function hide10(text10) {
+  text10.style.display = 'none';
+}
+function hide11(text11) {
+  text11.style.display = 'none';
+}
+function hide12(text12) {
+  text12.style.display = 'none';
+}
+function hide13(text13) {
+  text13.style.display = 'none';
+}
+function hide14(text14) {
+  text14.style.display = 'none';
+}
+function hide15(text15) {
+  text15.style.display = 'none';
+}
+
 //checkURL and hide hearts
 function checkURL() {
    if (window.location.hash === "#wonhy") {
@@ -128,10 +190,6 @@ wonhy.addEventListener("click", () => {
     });
 }, false);
 
-function hidewonhy(wonhy) {
-  wonhy.style.display = 'none';
-}
-
 //joes
 var ref2 = firebase.database().ref("joes");
 ref2.on("value", (snapshot) => {
@@ -145,10 +203,6 @@ joes.addEventListener("click", () => {
         }
     });
 }, false);
-
-function hidejoes(joes) {
-  joes.style.display = 'none';
-}
 
 //leeh
 var ref3 = firebase.database().ref("leeh");
@@ -164,10 +218,6 @@ leeh.addEventListener("click", () => {
     });
 }, false);
 
-function hideleeh(leeh) {
-  leeh.style.display = 'none';
-}
-
 //sonjh
 var ref4 = firebase.database().ref("sonjh");
 ref4.on("value", (snapshot) => {
@@ -182,10 +232,6 @@ sonjh.addEventListener("click", () => {
     });
 }, false);
 
-function hidesonjh(sonjh) {
-  sonjh.style.display = 'none';
-}
-
 //ahns
 var ref5 = firebase.database().ref("ahns");
 ref5.on("value", (snapshot) => {
@@ -199,10 +245,6 @@ ahns.addEventListener("click", () => {
         }
     });
 }, false);
-
-function hideahns(ahns) {
-  ahns.style.display = 'none';
-}
 
 //textbox shuffle
 
@@ -229,10 +271,6 @@ text1.addEventListener("click", () => {
     });
 }, false);
 
-function hide1(text1) {
-  text1.style.display = 'none';
-}
-
 //2
 var ref7 = firebase.database().ref("text2");
 ref7.on("value", (snapshot) => {
@@ -246,10 +284,6 @@ text2.addEventListener("click", () => {
         }
     });
 }, false);
-
-function hide2(text2) {
-  text2.style.display = 'none';
-}
 
 //3
 var ref8 = firebase.database().ref("text3");
@@ -265,10 +299,6 @@ text3.addEventListener("click", () => {
     });
 }, false);
 
-function hide3(text3) {
-  text3.style.display = 'none';
-}
-
 //4
 var ref9 = firebase.database().ref("text4");
 ref9.on("value", (snapshot) => {
@@ -282,10 +312,6 @@ text4.addEventListener("click", () => {
         }
     });
 }, false);
-
-function hide4(text4) {
-  text4.style.display = 'none';
-}
 
 //5
 var ref10 = firebase.database().ref("text5");
@@ -301,10 +327,6 @@ text5.addEventListener("click", () => {
     });
 }, false);
 
-function hide5(text5) {
-  text5.style.display = 'none';
-}
-
 //6
 var ref11 = firebase.database().ref("text6");
 ref11.on("value", (snapshot) => {
@@ -318,10 +340,6 @@ text6.addEventListener("click", () => {
         }
     });
 }, false);
-
-function hide6(text6) {
-  text6.style.display = 'none';
-}
 
 //7
 var ref12 = firebase.database().ref("text7");
@@ -337,10 +355,6 @@ text7.addEventListener("click", () => {
     });
 }, false);
 
-function hide7(text7) {
-  text7.style.display = 'none';
-}
-
 //8
 var ref13 = firebase.database().ref("text8");
 ref13.on("value", (snapshot) => {
@@ -354,10 +368,6 @@ text8.addEventListener("click", () => {
         }
     });
 }, false);
-
-function hide8(text8) {
-  text8.style.display = 'none';
-}
 
 //9
 var ref14 = firebase.database().ref("text9");
@@ -373,10 +383,6 @@ text9.addEventListener("click", () => {
     });
 }, false);
 
-function hide9(text9) {
-  text9.style.display = 'none';
-}
-
 //10
 var ref15 = firebase.database().ref("text10");
 ref15.on("value", (snapshot) => {
@@ -390,10 +396,6 @@ text10.addEventListener("click", () => {
         }
     });
 }, false);
-
-function hide10(text10) {
-  text10.style.display = 'none';
-}
 
 //11
 var ref16 = firebase.database().ref("text11");
@@ -409,10 +411,6 @@ text11.addEventListener("click", () => {
     });
 }, false);
 
-function hide11(text11) {
-  text11.style.display = 'none';
-}
-
 //12
 var ref17 = firebase.database().ref("text12");
 ref17.on("value", (snapshot) => {
@@ -427,9 +425,6 @@ text12.addEventListener("click", () => {
     });
 }, false);
 
-function hide12(text12) {
-  text12.style.display = 'none';
-}
 
 //13
 var ref18 = firebase.database().ref("text13");
@@ -445,10 +440,6 @@ text13.addEventListener("click", () => {
     });
 }, false);
 
-function hide13(text13) {
-  text13.style.display = 'none';
-}
-
 //14
 var ref19 = firebase.database().ref("text14");
 ref19.on("value", (snapshot) => {
@@ -462,10 +453,6 @@ text14.addEventListener("click", () => {
         }
     });
 }, false);
-
-function hide14(text14) {
-  text14.style.display = 'none';
-}
 
 //15
 var ref20 = firebase.database().ref("text15");
@@ -481,6 +468,3 @@ text15.addEventListener("click", () => {
     });
 }, false);
 
-function hide15(text15) {
-  text15.style.display = 'none';
-}
