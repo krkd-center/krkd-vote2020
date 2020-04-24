@@ -29,7 +29,8 @@ p {
 }
 
 #wonhy:visited {
-    cursor: normal;
+    pointer-events: none;
+    cursor: default;
 }
 
 #joes:visited {
