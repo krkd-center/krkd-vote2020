@@ -40,6 +40,10 @@ wonhy.addEventListener("click", () => {
     });
 }, false);
 
+function hidewonhy(wonhy) {
+  wonhy.style.display = 'none';
+}
+
 //joes
 const joes = document.getElementById("joes");
 let joesResult = document.getElementById("joes-result");
