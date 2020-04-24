@@ -62,6 +62,10 @@ joes.addEventListener("click", () => {
     });
 }, false);
 
+function hidejoes(joes) {
+  joes.style.display = 'none';
+}
+
 //leeh
 const leeh = document.getElementById("leeh");
 let leehResult = document.getElementById("leeh-result");
@@ -79,6 +83,10 @@ leeh.addEventListener("click", () => {
         }
     });
 }, false);
+
+function hideleeh(leeh) {
+  leeh.style.display = 'none';
+}
 
 //sonjh
 const sonjh = document.getElementById("sonjh");
@@ -98,6 +106,10 @@ sonjh.addEventListener("click", () => {
     });
 }, false);
 
+function hidesonjh(sonjh) {
+  sonjh.style.display = 'none';
+}
+
 //ahns
 const ahns = document.getElementById("ahns");
 let ahnsResult = document.getElementById("ahns-result");
@@ -116,6 +128,9 @@ ahns.addEventListener("click", () => {
     });
 }, false);
 
+function hideahns(ahns) {
+  ahns.style.display = 'none';
+}
 
 //textbox shuffle
 
@@ -145,6 +160,10 @@ text1.addEventListener("click", () => {
     });
 }, false);
 
+function hide1(text1) {
+  text1.style.display = 'none';
+}
+
 //2
 const text2 = document.getElementById("text2");
 let text2Result = document.getElementById("text2-result");
@@ -161,6 +180,10 @@ text2.addEventListener("click", () => {
         }
     });
 }, false);
+
+function hide2(text2) {
+  text2.style.display = 'none';
+}
 
 //3
 const text3 = document.getElementById("text3");
@@ -179,6 +202,10 @@ text3.addEventListener("click", () => {
     });
 }, false);
 
+function hide3(text3) {
+  text3.style.display = 'none';
+}
+
 //4
 const text4 = document.getElementById("text4");
 let text4Result = document.getElementById("text4-result");
@@ -195,6 +222,10 @@ text4.addEventListener("click", () => {
         }
     });
 }, false);
+
+function hide4(text4) {
+  text4.style.display = 'none';
+}
 
 //5
 const text5 = document.getElementById("text5");
@@ -213,6 +244,10 @@ text5.addEventListener("click", () => {
     });
 }, false);
 
+function hide5(text5) {
+  text5.style.display = 'none';
+}
+
 //6
 const text6 = document.getElementById("text6");
 let text6Result = document.getElementById("text6-result");
@@ -229,6 +264,10 @@ text6.addEventListener("click", () => {
         }
     });
 }, false);
+
+function hide6(text6) {
+  text6.style.display = 'none';
+}
 
 //7
 const text7 = document.getElementById("text7");
@@ -247,6 +286,10 @@ text7.addEventListener("click", () => {
     });
 }, false);
 
+function hide7(text7) {
+  text7.style.display = 'none';
+}
+
 //8
 const text8 = document.getElementById("text8");
 let text8Result = document.getElementById("text8-result");
@@ -263,6 +306,10 @@ text8.addEventListener("click", () => {
         }
     });
 }, false);
+
+function hide8(text8) {
+  text8.style.display = 'none';
+}
 
 //9
 const text9 = document.getElementById("text9");
@@ -281,6 +328,10 @@ text9.addEventListener("click", () => {
     });
 }, false);
 
+function hide9(text9) {
+  text9.style.display = 'none';
+}
+
 //10
 const text10 = document.getElementById("text10");
 let text10Result = document.getElementById("text10-result");
@@ -297,6 +348,10 @@ text10.addEventListener("click", () => {
         }
     });
 }, false);
+
+function hide10(text10) {
+  text10.style.display = 'none';
+}
 
 //11
 const text11 = document.getElementById("text11");
@@ -315,6 +370,10 @@ text11.addEventListener("click", () => {
     });
 }, false);
 
+function hide11(text11) {
+  text11.style.display = 'none';
+}
+
 //12
 const text12 = document.getElementById("text12");
 let text12Result = document.getElementById("text12-result");
@@ -331,6 +390,10 @@ text12.addEventListener("click", () => {
         }
     });
 }, false);
+
+function hide12(text12) {
+  text12.style.display = 'none';
+}
 
 //13
 const text13 = document.getElementById("text13");
@@ -349,6 +412,10 @@ text13.addEventListener("click", () => {
     });
 }, false);
 
+function hide13(text13) {
+  text13.style.display = 'none';
+}
+
 //14
 const text14 = document.getElementById("text14");
 let text14Result = document.getElementById("text14-result");
@@ -366,6 +433,10 @@ text14.addEventListener("click", () => {
     });
 }, false);
 
+function hide14(text14) {
+  text14.style.display = 'none';
+}
+
 //15
 const text15 = document.getElementById("text15");
 let text15Result = document.getElementById("text15-result");
@@ -382,3 +453,7 @@ text15.addEventListener("click", () => {
         }
     });
 }, false);
+
+function hide15(text15) {
+  text15.style.display = 'none';
+}
