@@ -61,64 +61,64 @@ const text15 = document.getElementById("text15");
 let text15Result = document.getElementById("text15-result");
 
 //hide hearts
-function hidewonhy(wonhy) {
+function hidewonhy() {
   wonhy.style.display = 'none';
 }
-function hidejoes(joes) {
+function hidejoes() {
   joes.style.display = 'none';
 }
-function hideleeh(leeh) {
+function hideleeh() {
   leeh.style.display = 'none';
 }
-function hidesonjh(sonjh) {
+function hidesonjh() {
   sonjh.style.display = 'none';
 }
-function hideahns(ahns) {
+function hideahns() {
   ahns.style.display = 'none';
 }
-function hide1(text1) {
+function hide1() {
   text1.style.display = 'none';
 }
-function hide2(text2) {
+function hide2() {
   text2.style.display = 'none';
 }
-function hide3(text3) {
+function hide3() {
   text3.style.display = 'none';
 }
-function hide4(text4) {
+function hide4() {
   text4.style.display = 'none';
 }
-function hide5(text5) {
+function hide5() {
   text5.style.display = 'none';
 }
-function hide6(text6) {
+function hide6() {
   text6.style.display = 'none';
 }
-function hide7(text7) {
+function hide7() {
   text7.style.display = 'none';
 }
-function hide8(text8) {
+function hide8() {
   text8.style.display = 'none';
 }
-function hide9(text9) {
+function hide9() {
   text9.style.display = 'none';
 }
-function hide10(text10) {
+function hide10() {
   text10.style.display = 'none';
 }
-function hide11(text11) {
+function hide11() {
   text11.style.display = 'none';
 }
-function hide12(text12) {
+function hide12() {
   text12.style.display = 'none';
 }
-function hide13(text13) {
+function hide13() {
   text13.style.display = 'none';
 }
-function hide14(text14) {
+function hide14() {
   text14.style.display = 'none';
 }
-function hide15(text15) {
+function hide15() {
   text15.style.display = 'none';
 }
 
