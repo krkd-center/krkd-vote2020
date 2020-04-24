@@ -15,6 +15,97 @@ firebase.analytics();
 
 var database = firebase.database();
 
+//get image elements
+const wonhy = document.getElementById("wonhy");
+let wonhyResult = document.getElementById("wonhy-result");
+const joes = document.getElementById("joes");
+let joesResult = document.getElementById("joes-result");
+const leeh = document.getElementById("leeh");
+let leehResult = document.getElementById("leeh-result");
+const sonjh = document.getElementById("sonjh");
+let sonjhResult = document.getElementById("sonjh-result");
+const ahns = document.getElementById("ahns");
+let ahnsResult = document.getElementById("ahns-result");
+
+
+//get text elements
+const text1 = document.getElementById("text1");
+let text1Result = document.getElementById("text1-result");
+const text2 = document.getElementById("text2");
+let text2Result = document.getElementById("text2-result");
+const text3 = document.getElementById("text3");
+let text3Result = document.getElementById("text3-result");
+const text4 = document.getElementById("text4");
+let text4Result = document.getElementById("text4-result");
+const text5 = document.getElementById("text5");
+let text5Result = document.getElementById("text5-result");
+const text6 = document.getElementById("text6");
+let text6Result = document.getElementById("text6-result");
+const text7 = document.getElementById("text7");
+let text7Result = document.getElementById("text7-result");
+const text8 = document.getElementById("text8");
+let text8Result = document.getElementById("text8-result");
+const text9 = document.getElementById("text9");
+let text9Result = document.getElementById("text9-result");
+const text10 = document.getElementById("text10");
+let text10Result = document.getElementById("text10-result");
+const text11 = document.getElementById("text11");
+let text11Result = document.getElementById("text11-result");
+const text12 = document.getElementById("text12");
+let text12Result = document.getElementById("text12-result");
+const text13 = document.getElementById("text13");
+let text13Result = document.getElementById("text13-result");
+const text14 = document.getElementById("text14");
+let text14Result = document.getElementById("text14-result");
+const text15 = document.getElementById("text15");
+let text15Result = document.getElementById("text15-result");
+
+//checkURL and hide hearts
+function checkURL() {
+   if (window.location.hash === "#wonhy") {
+       hidewonhy();
+   } else if (window.location.hash === "#joes") {
+       hidejoes();
+   } else if (window.location.hash === "#leeh") {
+       hideleeh();
+   } else if (window.location.hash === "#sonjh") {
+       hidesonjh();
+   } else if (window.location.hash === "#ahns") {
+       hideahns();
+   } else if (window.location.hash === "#text1") {
+       hide1();
+   } else if (window.location.hash === "#text2") {
+       hide2();
+   } else if (window.location.hash === "#text3") {
+       hide3();
+   } else if (window.location.hash === "#text4") {
+       hide4();
+   } else if (window.location.hash === "#text5") {
+       hide5();
+   } else if (window.location.hash === "#text6") {
+       hide6();
+   } else if (window.location.hash === "#text7") {
+       hide7();
+   } else if (window.location.hash === "#text8") {
+       hide8();
+   } else if (window.location.hash === "#text9") {
+       hide9();
+   } else if (window.location.hash === "#text10") {
+       hide10();
+   } else if (window.location.hash === "#text11") {
+       hide11();
+   } else if (window.location.hash === "#text12") {
+       hide12();
+   } else if (window.location.hash === "#text13") {
+       hide13();
+   } else if (window.location.hash === "#text14") {
+       hide14();
+   } else if (window.location.hash === "#text15") {
+       hide15();
+   } else {}
+} 
+checkURL();
+
 //imagebox shuffle
 var imgcards = $(".image-box");
 for (var i = 0; i < imgcards.length; i++) {
@@ -24,9 +115,6 @@ for (var i = 0; i < imgcards.length; i++) {
 }
 
 //wonhy
-const wonhy = document.getElementById("wonhy");
-let wonhyResult = document.getElementById("wonhy-result");
-
 var ref = firebase.database().ref("wonhy");
 ref.on("value", (snapshot) => {
     wonhyResult.textContent = snapshot.val();
@@ -45,10 +133,6 @@ function hidewonhy(wonhy) {
 }
 
 //joes
-const joes = document.getElementById("joes");
-let joesResult = document.getElementById("joes-result");
-
-
 var ref2 = firebase.database().ref("joes");
 ref2.on("value", (snapshot) => {
     joesResult.textContent = snapshot.val();
@@ -67,10 +151,6 @@ function hidejoes(joes) {
 }
 
 //leeh
-const leeh = document.getElementById("leeh");
-let leehResult = document.getElementById("leeh-result");
-
-
 var ref3 = firebase.database().ref("leeh");
 ref3.on("value", (snapshot) => {
     leehResult.textContent = snapshot.val();
@@ -89,10 +169,6 @@ function hideleeh(leeh) {
 }
 
 //sonjh
-const sonjh = document.getElementById("sonjh");
-let sonjhResult = document.getElementById("sonjh-result");
-
-
 var ref4 = firebase.database().ref("sonjh");
 ref4.on("value", (snapshot) => {
     sonjhResult.textContent = snapshot.val();
@@ -111,10 +187,6 @@ function hidesonjh(sonjh) {
 }
 
 //ahns
-const ahns = document.getElementById("ahns");
-let ahnsResult = document.getElementById("ahns-result");
-
-
 var ref5 = firebase.database().ref("ahns");
 ref5.on("value", (snapshot) => {
     ahnsResult.textContent = snapshot.val();
@@ -144,9 +216,6 @@ for (var i = 0; i < cards.length; i++) {
 //textbox likes
 
 //1
-const text1 = document.getElementById("text1");
-let text1Result = document.getElementById("text1-result");
-
 var ref6 = firebase.database().ref("text1");
 ref6.on("value", (snapshot) => {
     text1Result.textContent = snapshot.val();
@@ -165,9 +234,6 @@ function hide1(text1) {
 }
 
 //2
-const text2 = document.getElementById("text2");
-let text2Result = document.getElementById("text2-result");
-
 var ref7 = firebase.database().ref("text2");
 ref7.on("value", (snapshot) => {
     text2Result.textContent = snapshot.val();
@@ -186,9 +252,6 @@ function hide2(text2) {
 }
 
 //3
-const text3 = document.getElementById("text3");
-let text3Result = document.getElementById("text3-result");
-
 var ref8 = firebase.database().ref("text3");
 ref8.on("value", (snapshot) => {
     text3Result.textContent = snapshot.val();
@@ -207,9 +270,6 @@ function hide3(text3) {
 }
 
 //4
-const text4 = document.getElementById("text4");
-let text4Result = document.getElementById("text4-result");
-
 var ref9 = firebase.database().ref("text4");
 ref9.on("value", (snapshot) => {
     text4Result.textContent = snapshot.val();
@@ -228,9 +288,6 @@ function hide4(text4) {
 }
 
 //5
-const text5 = document.getElementById("text5");
-let text5Result = document.getElementById("text5-result");
-
 var ref10 = firebase.database().ref("text5");
 ref10.on("value", (snapshot) => {
     text5Result.textContent = snapshot.val();
@@ -249,9 +306,6 @@ function hide5(text5) {
 }
 
 //6
-const text6 = document.getElementById("text6");
-let text6Result = document.getElementById("text6-result");
-
 var ref11 = firebase.database().ref("text6");
 ref11.on("value", (snapshot) => {
     text6Result.textContent = snapshot.val();
@@ -270,9 +324,6 @@ function hide6(text6) {
 }
 
 //7
-const text7 = document.getElementById("text7");
-let text7Result = document.getElementById("text7-result");
-
 var ref12 = firebase.database().ref("text7");
 ref12.on("value", (snapshot) => {
     text7Result.textContent = snapshot.val();
@@ -291,9 +342,6 @@ function hide7(text7) {
 }
 
 //8
-const text8 = document.getElementById("text8");
-let text8Result = document.getElementById("text8-result");
-
 var ref13 = firebase.database().ref("text8");
 ref13.on("value", (snapshot) => {
     text8Result.textContent = snapshot.val();
@@ -312,9 +360,6 @@ function hide8(text8) {
 }
 
 //9
-const text9 = document.getElementById("text9");
-let text9Result = document.getElementById("text9-result");
-
 var ref14 = firebase.database().ref("text9");
 ref14.on("value", (snapshot) => {
     text9Result.textContent = snapshot.val();
@@ -333,9 +378,6 @@ function hide9(text9) {
 }
 
 //10
-const text10 = document.getElementById("text10");
-let text10Result = document.getElementById("text10-result");
-
 var ref15 = firebase.database().ref("text10");
 ref15.on("value", (snapshot) => {
     text10Result.textContent = snapshot.val();
@@ -354,9 +396,6 @@ function hide10(text10) {
 }
 
 //11
-const text11 = document.getElementById("text11");
-let text11Result = document.getElementById("text11-result");
-
 var ref16 = firebase.database().ref("text11");
 ref16.on("value", (snapshot) => {
     text11Result.textContent = snapshot.val();
@@ -375,9 +414,6 @@ function hide11(text11) {
 }
 
 //12
-const text12 = document.getElementById("text12");
-let text12Result = document.getElementById("text12-result");
-
 var ref17 = firebase.database().ref("text12");
 ref17.on("value", (snapshot) => {
     text12Result.textContent = snapshot.val();
@@ -396,9 +432,6 @@ function hide12(text12) {
 }
 
 //13
-const text13 = document.getElementById("text13");
-let text13Result = document.getElementById("text13-result");
-
 var ref18 = firebase.database().ref("text13");
 ref18.on("value", (snapshot) => {
     text13Result.textContent = snapshot.val();
@@ -417,9 +450,6 @@ function hide13(text13) {
 }
 
 //14
-const text14 = document.getElementById("text14");
-let text14Result = document.getElementById("text14-result");
-
 var ref19 = firebase.database().ref("text14");
 ref19.on("value", (snapshot) => {
     text14Result.textContent = snapshot.val();
@@ -438,9 +468,6 @@ function hide14(text14) {
 }
 
 //15
-const text15 = document.getElementById("text15");
-let text15Result = document.getElementById("text15-result");
-
 var ref20 = firebase.database().ref("text15");
 ref20.on("value", (snapshot) => {
     text15Result.textContent = snapshot.val();
