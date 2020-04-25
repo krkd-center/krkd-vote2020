@@ -185,7 +185,7 @@ ref.on("value", (snapshot) => {
 wonhy.addEventListener("click", () => {
     ref.transaction(val => val + 1, (err) => {
         if (err) {
-            alert(err);
+            alert('투표가 마감되었습니다.');
         }
     });
 }, false);
