@@ -183,7 +183,7 @@ ref.on("value", (snapshot) => {
 });
 
 wonhy.addEventListener("click", () => {
-    ref.transaction(val => val + 1, (err) => {
+    ref.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -197,7 +197,7 @@ ref2.on("value", (snapshot) => {
 });
 
 joes.addEventListener("click", () => {
-    ref2.transaction(val => val + 1, (err) => {
+    ref2.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -211,7 +211,7 @@ ref3.on("value", (snapshot) => {
 });
 
 leeh.addEventListener("click", () => {
-    ref3.transaction(val => val + 1, (err) => {
+    ref3.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -225,7 +225,7 @@ ref4.on("value", (snapshot) => {
 });
 
 sonjh.addEventListener("click", () => {
-    ref4.transaction(val => val + 1, (err) => {
+    ref4.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -239,7 +239,7 @@ ref5.on("value", (snapshot) => {
 });
 
 ahns.addEventListener("click", () => {
-    ref5.transaction(val => val + 1, (err) => {
+    ref5.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -264,7 +264,7 @@ ref6.on("value", (snapshot) => {
 });
 
 text1.addEventListener("click", () => {
-    ref6.transaction(val => val + 1, (err) => {
+    ref6.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -278,7 +278,7 @@ ref7.on("value", (snapshot) => {
 });
 
 text2.addEventListener("click", () => {
-    ref7.transaction(val => val + 1, (err) => {
+    ref7.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -292,7 +292,7 @@ ref8.on("value", (snapshot) => {
 });
 
 text3.addEventListener("click", () => {
-    ref8.transaction(val => val + 1, (err) => {
+    ref8.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -306,7 +306,7 @@ ref9.on("value", (snapshot) => {
 });
 
 text4.addEventListener("click", () => {
-    ref9.transaction(val => val + 1, (err) => {
+    ref9.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -320,7 +320,7 @@ ref10.on("value", (snapshot) => {
 });
 
 text5.addEventListener("click", () => {
-    ref10.transaction(val => val + 1, (err) => {
+    ref10.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -334,7 +334,7 @@ ref11.on("value", (snapshot) => {
 });
 
 text6.addEventListener("click", () => {
-    ref11.transaction(val => val + 1, (err) => {
+    ref11.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -348,7 +348,7 @@ ref12.on("value", (snapshot) => {
 });
 
 text7.addEventListener("click", () => {
-    ref12.transaction(val => val + 1, (err) => {
+    ref12.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -362,7 +362,7 @@ ref13.on("value", (snapshot) => {
 });
 
 text8.addEventListener("click", () => {
-    ref13.transaction(val => val + 1, (err) => {
+    ref13.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -376,7 +376,7 @@ ref14.on("value", (snapshot) => {
 });
 
 text9.addEventListener("click", () => {
-    ref14.transaction(val => val + 1, (err) => {
+    ref14.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -390,7 +390,7 @@ ref15.on("value", (snapshot) => {
 });
 
 text10.addEventListener("click", () => {
-    ref15.transaction(val => val + 1, (err) => {
+    ref15.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -404,7 +404,7 @@ ref16.on("value", (snapshot) => {
 });
 
 text11.addEventListener("click", () => {
-    ref16.transaction(val => val + 1, (err) => {
+    ref16.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -418,7 +418,7 @@ ref17.on("value", (snapshot) => {
 });
 
 text12.addEventListener("click", () => {
-    ref17.transaction(val => val + 1, (err) => {
+    ref17.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -433,7 +433,7 @@ ref18.on("value", (snapshot) => {
 });
 
 text13.addEventListener("click", () => {
-    ref18.transaction(val => val + 1, (err) => {
+    ref18.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -447,7 +447,7 @@ ref19.on("value", (snapshot) => {
 });
 
 text14.addEventListener("click", () => {
-    ref19.transaction(val => val + 1, (err) => {
+    ref19.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
@@ -461,7 +461,7 @@ ref20.on("value", (snapshot) => {
 });
 
 text15.addEventListener("click", () => {
-    ref20.transaction(val => val + 1, (err) => {
+    ref20.transaction(val => val + 0, (err) => {
         if (err) {
             alert('투표가 마감되었습니다. 참여해주셔서 감사합니다~');
         }
