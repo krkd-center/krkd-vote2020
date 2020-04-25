@@ -182,13 +182,7 @@ ref.on("value", (snapshot) => {
     wonhyResult.textContent = snapshot.val();
 });
 
-wonhy.addEventListener("click", () => {
-    ref.transaction(val => val + 1, (err) => {
-        if (err) {
-            alert(err);
-        }
-    });
-}, false);
+
 
 //joes
 var ref2 = firebase.database().ref("joes");
