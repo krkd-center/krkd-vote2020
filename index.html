@@ -37,7 +37,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta property="og:title"              content="크리킨디 생일맞이 청소년 공모전 온라인 투표" />
     <meta property="og:description"        content="크리킨디센터의 두 번째 생일을 축하해주세요~!" />
     <meta property="og:image"              content="https://krkd-center.github.io/krkd-vote2020/image/krkd-bday.jpg" />
-</head>
+    <script>
+        window.onload = function() {
+    var anchors = document.getElementsByTagName("a");
+    for (var i = 0; i < anchors.length; i++) {
+        anchors[i].onclick = function() {return false;};
+    }
+};</script>
+    </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
