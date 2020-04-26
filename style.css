@@ -28,6 +28,15 @@ p {
     padding: 2px 0 5px 7px;
 }
 
+.win {
+    width: 100%;
+    background-color: yellow;
+    color: black;
+    font-family: Light;
+    text-align: center;
+    padding: 5px;
+}
+
 #wonhy:visited {
     pointer-events: none;
     cursor: default;
